@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario con Flexbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="contenedor">
-        <div class="header">
-            <h1>Iniciar Sesión</h1>
+        <div class="form-container">
+            <form class="form" name="loginForm">
+                <div class="header">
+                    <h1>Iniciar Sesión</h1>
+                </div>
+                <input type="email" id="correo" name="email" placeholder="Correo electrónico" required>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                <button class="form-button" type="submit">Enviar</button>
+            </form>
         </div>
-        <form> <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required> <input
-                type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required> <input
-                type="submit" value="Enviar"> </form>
     </div>
 </body>
 </html>
